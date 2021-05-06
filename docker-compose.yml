@@ -1,0 +1,10 @@
+version: "3.8"
+services:
+  web:
+    container_name: env_status
+    build: ./
+    ports:
+      - "8080:80"
+    env_file: ./docker/.env
+    volumes:
+      - ./:/var/www/html/

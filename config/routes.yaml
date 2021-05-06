@@ -1,0 +1,7 @@
+#index:
+#    path: /
+#    controller: App\Controller\DefaultController::index
+
+status:
+  path: /
+  controller: App\Controller\StatusController::index
