@@ -4,7 +4,14 @@
 # Put parameters here that don't need to change on each machine where the app is deployed
 # https://symfony.com/doc/current/best_practices/configuration.html#application-related-configuration
 parameters:
-
+    git:
+        url: '%env(GIT_URL)%'
+        token: '%env(GIT_API_TOKEN)%'
+        projectId: '%env(GIT_PROJECT_ID)%'
+        masterBranchName: '%env(GIT_MASTER_BRANCH_NAME)%'
+        releaseBranchName: '%env(GIT_RELEASE_BRANCH_NAME)%'
+    jira:
+        projectName: '%env(JIRA_PROJECT_NAME)%'
 services:
     # default configuration for services in *this* file
     _defaults:

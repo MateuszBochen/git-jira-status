@@ -4,7 +4,7 @@ services:
     container_name: env_status
     build: ./
     ports:
-      - "8080:80"
+      - "8070:80"
     env_file: ./docker/.env
     volumes:
       - ./:/var/www/html/
